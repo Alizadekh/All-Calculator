@@ -1,0 +1,193 @@
+header {
+  padding: 20px 0px;
+  border-bottom: 1px solid #3498db;
+  background-color: rgba(0, 153, 255, 0.0941176471);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .logo {
+  font-family: "Anton", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  color: #3498db;
+}
+header .container nav .nav {
+  display: flex;
+}
+header .container nav .nav li {
+  padding: 10px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 20px;
+  color: #3498db;
+}
+header .container nav .nav li:hover {
+  background-color: #3498db;
+  color: white;
+}
+header .container nav .nav .dropdown-btn {
+  position: relative;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  /* Dropdown content links on hover */
+  /* Show dropdown content on button hover */
+  /* Animation keyframes */
+}
+header .container nav .nav .dropdown-btn:hover .dropdown-content {
+  display: block;
+  transform: translateY(0px);
+}
+header .container nav .nav .dropdown-btn .dropdown-content {
+  border-bottom: 1px solid #3498db;
+  border-left: 1px solid #3498db;
+  border-right: 1px solid #3498db;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  top: 42px;
+  right: 0.5px;
+  display: none;
+  transition: 0.4s;
+  animation: fadeIn 0.3s ease;
+}
+header .container nav .nav .dropdown-btn .dropdown-content li {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+header .container nav .nav .dropdown-btn .dropdown-content li {
+  padding: 12px 16px;
+  text-decoration: none;
+}
+header .container nav .nav .dropdown-btn .dropdown-content li:hover {
+  background-color: #3498db;
+  color: white;
+}
+header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+#section-1 {
+  z-index: -1;
+  height: 400px;
+  background-image: url("../section-1 (background).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+}
+#section-1 h1 {
+  font-family: "Anton", sans-serif;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+}
+
+#section-2 {
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+#section-2 .container h1 {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+#section-2 .container .first-input input {
+  height: 30px;
+  width: 20%;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+#section-2 .container .first-input button {
+  height: 30px;
+  padding: 0px 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+#section-2 .container .input-boxes {
+  margin: auto;
+  margin-top: 20px;
+}
+@keyframes fadeAndSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#section-2 .container .input-boxes .box.fade-slide-in {
+  animation: fadeAndSlideIn 0.5s ease-in-out;
+}
+#section-2 .container .input-boxes .box-end {
+  border-radius: 5px;
+  background-color: #a189d2;
+  padding: 5px 10px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+#section-2 .container .input-boxes .box-end p {
+  margin-right: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #3498db;
+}
+#section-2 .container .input-boxes .box-end input {
+  border-radius: 5px;
+}
+#section-2 .container .input-boxes button {
+  height: 30px;
+  padding: 0px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#section-2 .container .input-boxes .score {
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#section-2 .container .input-boxes .box {
+  border-radius: 5px;
+  background-color: #3498db;
+  padding: 5px 10px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+#section-2 .container .input-boxes .box p {
+  margin-right: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#section-2 .container .input-boxes .box input {
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+}/*# sourceMappingURL=style.css.map */

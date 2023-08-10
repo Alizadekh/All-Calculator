@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Student Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h2>ALL CALCULATOR</h2>
+        </div>
+        <nav>
+          <ul class="nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li class="dropdown-btn">
+              <span>CALCULATORS</span>
+              <div class="dropdown-content">
+                <ul>
+                  <li>School Calculator</li>
+                  <li>University Calculator</li>
+                  <li>Extra Calculator</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="section-1">
+        <h1>Calculate your school score</h1>
+      </section>
+      <section id="section-2">
+        <div class="container">
+          <h1>CALCULATOR FOR SCHOOL</h1>
+          <div class="first-input">
+            <input type="text" placeholder="KSQ sayı" class="number" />
+            <button id="addButton">Əlavə Et</button>
+          </div>
+          <div class="input-boxes">
+            <div class="box box-1">
+              <p>KSQ</p>
+              <input type="text" />
+            </div>
+            <div class="box-end">
+              <p>BSQ</p>
+              <input type="text" />
+            </div>
+            <button class="finish">HESABLA</button>
+            <p class="score">Yekun: <span></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
