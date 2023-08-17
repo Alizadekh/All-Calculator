@@ -102,7 +102,7 @@ header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
 #section-1 {
   z-index: -1;
   height: 400px;
-  background-image: url("../section-1 (background).jpg");
+  background-image: url("./section-1 (background).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 50px;
@@ -119,101 +119,43 @@ header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
   left: 7%;
 }
 
-#section-2 {
-  padding-bottom: 50px;
-  text-align: center;
-  padding-top: 50px;
-}
-#section-2 .container h1 {
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+#section-2 .boxes {
+  border-radius: 50px;
+  padding: 20px;
+  background: #56ccf2; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2f80ed, #56ccf2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-#section-2 .container .first-input input {
-  height: 30px;
-  width: 20%;
-  border-radius: 10px;
-  padding-left: 5px;
-}
-#section-2 .container .first-input button {
-  height: 30px;
-  padding: 0px 10px;
-  background-color: #3498db;
-  border: none;
+#section-2 .boxes .box {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
-  border-radius: 10px;
+  width: 25%;
+  background-color: #3498db;
+  padding: 10px;
+  background: #7474bf; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #348ac7, #7474bf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#section-2 .container .input-boxes {
+#section-2 .boxes .box a {
+  color: white;
+}
+
+#section-3 {
+  text-align: center;
+}
+#section-3 img {
   margin: auto;
-  margin-top: 20px;
-}
-@keyframes fadeAndSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-#section-2 .container .input-boxes .box.fade-slide-in {
-  animation: fadeAndSlideIn 0.5s ease-in-out;
-}
-#section-2 .container .input-boxes .box-end {
-  border-radius: 5px;
-  background-color: #a189d2;
-  padding: 5px 10px;
-  display: flex;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-#section-2 .container .input-boxes .box-end p {
-  margin-right: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #ffffff;
-}
-#section-2 .container .input-boxes .box-end input {
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-#section-2 .container .input-boxes button {
-  height: 30px;
-  padding: 0px 20px;
-  background-color: #3498db;
-  border: none;
-  color: white;
-  border-radius: 10px;
-  font-size: 18px;
-}
-#section-2 .container .input-boxes .score {
-  border-radius: 10px;
-  font-size: 18px;
-  margin-top: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: white;
-  background-color: #ffaa00;
-  padding: 10px 5px;
-}
-#section-2 .container .input-boxes .box {
-  border-radius: 5px;
-  background-color: #3498db;
-  padding: 5px 10px;
-  display: flex;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-#section-2 .container .input-boxes .box p {
-  margin-right: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-}
-#section-2 .container .input-boxes .box input {
-  border-radius: 5px;
-  outline: none;
-  padding-left: 5px;
-  border: none;
+  width: 80%;
+  height: 600px;
+  border-radius: 20px;
 }
 
 footer {
@@ -224,4 +166,4 @@ footer {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px 0px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=home.css.map */

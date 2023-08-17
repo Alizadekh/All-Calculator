@@ -7,6 +7,9 @@ document.getElementById("addButton").addEventListener("click", function () {
   if (isNaN(ksqCount) || ksqCount <= 0) {
     alert("Xahis edirik musbet eded girin");
     return;
+  } else if (ksqCount > 8) {
+    alert("Maksimum say 8 ola bilər!");
+    return;
   }
 
   var boxTemplate = inputBoxes.querySelector(".box-1");

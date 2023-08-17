@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -35,8 +35,8 @@
               <div class="dropdown-content">
                 <ul>
                   <li><a href="./index.html">School Calculator</a></li>
-                  <li>University Calculator</li>
-                  <li>Extra Calculator</li>
+                  <li><a href="./uni.html">University Calculator</a></li>
+                  <li><a href="./home.html">Extra Calculator</a></li>
                 </ul>
               </div>
             </li>
@@ -46,28 +46,35 @@
     </header>
     <main>
       <section id="section-1">
-        <h1>Calculate your school score</h1>
+        <h1>Calculate your all score</h1>
       </section>
       <section id="section-2">
-        <div class="container">
-          <h1>CALCULATOR FOR SCHOOL</h1>
-          <div class="first-input">
-            <input type="text" placeholder="KSQ sayı" class="number" />
-            <button id="addButton">Əlavə Et</button>
+        <div class="boxes">
+          <div class="box box-1">
+            <p>Calculate your school score</p>
+            <a href="./index.html">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
           </div>
-          <div class="input-boxes">
-            <div class="box box-1">
-              <p>KSQ</p>
-              <input type="text" />
-            </div>
-            <div class="box-end">
-              <p>BSQ</p>
-              <input type="text" />
-            </div>
-            <button class="finish">HESABLA</button>
-            <p class="score">Yekun: <span></span></p>
+          <div class="box box-2">
+            <p>Calculate your University Score</p>
+            <a href="">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+          <div class="box box-3">
+            <p>Extra Calculator</p>
+            <a href="">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
           </div>
         </div>
+      </section>
+      <section id="section-3">
+        <img
+          src="https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
       </section>
     </main>
     <footer>
