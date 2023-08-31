@@ -3,9 +3,40 @@ header {
   border-bottom: 1px solid #3498db;
   background-color: rgba(0, 153, 255, 0.0941176471);
 }
+header .mobile-nav {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  display: none !important;
+}
+header .mobile-nav .burger-menu {
+  z-index: 11111111;
+}
+header .mobile-nav .burger-menu i {
+  font-size: 44px;
+  color: #2f80ed;
+  margin-right: 10px;
+  cursor: pointer;
+}
+header .mobile-nav .logo a {
+  font-family: "Anton", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #3498db;
+  margin-left: 10px;
+}
 header .container {
   display: flex;
   justify-content: space-between;
+}
+header .container i {
+  margin-right: 30px;
+  text-align: end;
+  margin-bottom: 20px;
+  display: none;
+  font-size: 32px;
+  color: #2f80ed;
+  cursor: pointer;
 }
 header .container .logo a {
   font-family: "Anton", sans-serif;

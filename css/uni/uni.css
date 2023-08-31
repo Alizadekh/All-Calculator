@@ -133,7 +133,7 @@ header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
 #section-1 {
   z-index: -1;
   height: 400px;
-  background-image: url("../section-1 (background).jpg");
+  background-image: url("./section-1 (background).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 50px;
@@ -191,23 +191,15 @@ header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
 #section-2 .container .input-boxes .box.fade-slide-in {
   animation: fadeAndSlideIn 0.5s ease-in-out;
 }
-#section-2 .container .input-boxes .box-end {
-  border-radius: 5px;
-  background-color: #a189d2;
-  padding: 5px 10px;
+#section-2 .container .input-boxes .box {
   display: flex;
-  margin-bottom: 10px;
-  font-size: 24px;
+  justify-content: space-around;
+  background: #5c258d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389a2, #5c258d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#section-2 .container .input-boxes .box-end p {
-  margin-right: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #ffffff;
-}
-#section-2 .container .input-boxes .box-end input {
-  border-radius: 5px;
-  border: none;
-  outline: none;
+#section-2 .container .input-boxes .box .left,
+#section-2 .container .input-boxes .box .right {
+  display: flex;
 }
 #section-2 .container .input-boxes button {
   cursor: pointer;
@@ -242,8 +234,6 @@ header .container nav .nav .dropdown-btn .dropdown-btn:hover .dropdown-content {
   display: flex;
   margin-bottom: 10px;
   font-size: 24px;
-  background: #4776e6; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8e54e9, #4776e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #section-2 .container .input-boxes .box p {
   margin-right: 10px;
@@ -265,4 +255,4 @@ footer {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px 0px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=uni.css.map */

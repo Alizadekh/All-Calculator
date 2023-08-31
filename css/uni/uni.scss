@@ -146,7 +146,6 @@ header {
     }
   }
 }
-
 #section-1 {
   z-index: -1;
   height: 400px;
@@ -168,61 +167,134 @@ header {
   }
 }
 #section-2 {
-  .boxes {
-    border-radius: 50px;
-    padding: 20px;
-    background: #56ccf2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #2f80ed,
-      #56ccf2
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #2f80ed,
-      #56ccf2
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    margin: auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    .box {
-      border: 1px solid white;
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-around;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      color: white;
-      width: 25%;
-      background-color: #3498db;
-      padding: 10px;
-      background: #7474bf; /* fallback for old browsers */
-      background: -webkit-linear-gradient(
-        to right,
-        #348ac7,
-        #7474bf
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to right,
-        #348ac7,
-        #7474bf
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      a {
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+  .container {
+    h1 {
+      font-size: 30px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin-bottom: 20px;
+    }
+    .first-input {
+      input {
+        height: 30px;
+        width: 20%;
+        border-radius: 10px;
+        padding-left: 5px;
+      }
+      button {
+        height: 30px;
+        padding: 0px 10px;
+        background-color: #3498db;
+        border: none;
         color: white;
+        border-radius: 10px;
       }
     }
-  }
-}
-#section-3 {
-  text-align: center;
-  img {
-    margin: auto;
-    width: 80%;
-    height: 600px;
-    border-radius: 20px;
+    .input-boxes {
+      margin: auto;
+      margin-top: 20px;
+      @keyframes fadeAndSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .box.fade-slide-in {
+        animation: fadeAndSlideIn 0.5s ease-in-out;
+      }
+      .box {
+        display: flex;
+        justify-content: space-around;
+        background: #5c258d; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #4389a2,
+          #5c258d
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #4389a2,
+          #5c258d
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        .left,
+        .right {
+          display: flex;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        height: 30px;
+        padding: 0px 20px;
+        background: #7474bf; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #348ac7,
+          #7474bf
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #348ac7,
+          #7474bf
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: 0.6s ease;
+        &:hover {
+          background: #7474bf; /* fallback for old browsers */
+          background: -webkit-linear-gradient(
+            to right,
+            #7474bf,
+            #348ac7
+          ); /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(
+            to right,
+            #7474bf,
+            #348ac7
+          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          border: none;
+        }
+      }
+      .score {
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: white;
+        background-color: #ffaa00;
+        padding: 10px 5px;
+      }
+      .box {
+        border-radius: 5px;
+        background-color: #3498db;
+        padding: 5px 10px;
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 24px;
+        p {
+          margin-right: 10px;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          color: white;
+        }
+        input {
+          border-radius: 5px;
+          outline: none;
+          padding-left: 5px;
+          border: none;
+        }
+      }
+    }
   }
 }
 footer {

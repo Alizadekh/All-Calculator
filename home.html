@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./responsive/responsive-home.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/home/home.css" />
     <link
@@ -22,7 +23,16 @@
   </head>
   <body>
     <header>
+      <div class="mobile-nav">
+        <div class="logo">
+          <h2><a href="./home.html">ALL CALCULATOR</a></h2>
+        </div>
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
       <div class="container">
+        <i id="closeBtn" class="fa-solid fa-x"></i>
         <div class="logo">
           <h2><a href="./home.html">ALL CALCULATOR</a></h2>
         </div>
@@ -35,7 +45,7 @@
               <div class="dropdown-content">
                 <ul>
                   <li><a href="./index.html">School Calculator</a></li>
-                  <li><a href="./uni.html">University Calculator</a></li>
+                  <li><a href="./university.html">University Calculator</a></li>
                   <li><a href="./home.html">Extra Calculator</a></li>
                 </ul>
               </div>
@@ -58,7 +68,7 @@
           </div>
           <div class="box box-2">
             <p>Calculate your University Score</p>
-            <a href="">
+            <a href="./university.html">
               <i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
           </div>
@@ -81,6 +91,6 @@
       <p>Created by Aykhan Alizadekh</p>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./css/home/home.js"></script>
   </body>
 </html>

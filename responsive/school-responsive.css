@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  body header {
+    position: relative;
+  }
+  body header .mobile-nav {
+    display: flex !important;
+  }
+  body header .container {
+    top: 0px;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 90% !important;
+    left: 0px;
+    height: 100vh;
+    transition: 0.4s;
+    transform: translateX(-500px);
+  }
+  body header .container i {
+    display: block !important;
+  }
+  body header .container nav .nav {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+  }
+  body header .container nav .nav li {
+    margin-bottom: 50px !important;
+    font-size: 26px;
+  }
+  body main #section-1 {
+    height: 300px !important;
+  }
+  body main #section-1 h1 {
+    text-align: center !important;
+    top: 20% !important;
+    left: 2% !important;
+  }
+  body main #section-2 .container h1 {
+    font-size: 20px;
+  }
+  body main #section-2 .container .first-input input {
+    width: 50% !important;
+  }
+}/*# sourceMappingURL=school-responsive.css.map */
